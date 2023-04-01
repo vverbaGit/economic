@@ -2,7 +2,9 @@
 
 ## Installation
 
-You should have JDK 17 and maven. You can run app by run this maven command
+You should have JDK 17 and maven.
+You can run app by run this maven command.
+The web application is accessible via localhost:8080.
 
 ```maven
 mvn clean install spring-boot:run
