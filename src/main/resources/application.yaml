@@ -1,0 +1,14 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/economic
+    username: postgres
+    password: postgres
+  jpa:
+    hibernate:
+      ddl-auto: update
+  liquibase:
+    change-log: db/changelog/changelog.xml
+    enabled: true
+server:
+  servlet:
+    context-path: /economic

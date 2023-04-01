@@ -1,0 +1,17 @@
+<databaseChangeLog xmlns="http://www.liquibase.org/xml/ns/dbchangelog" xmlns:ext="http://www.liquibase.org/xml/ns/dbchangelog-ext" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.4.xsd http://www.liquibase.org/xml/ns/dbchangelog-ext http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-ext.xsd">
+
+    <changeSet id="1" author="vverba">
+        <loadUpdateData tableName="position" primaryKey="id"
+                        file="position.csv" relativeToChangelogFile="true" separator=";"/>
+        <loadUpdateData tableName="person" primaryKey="id"
+                        file="person.csv" relativeToChangelogFile="true" separator=";"/>
+        <loadUpdateData tableName="salary" primaryKey="id"
+                        file="salary.csv" relativeToChangelogFile="true" separator=";"/>
+        <loadUpdateData tableName="department" primaryKey="id"
+                        file="departments.csv" relativeToChangelogFile="true" separator=";"/>
+        <loadUpdateData tableName="license" primaryKey="id"
+                        file="license.csv" relativeToChangelogFile="true" separator=";"/>
+        <loadUpdateData tableName="employee" primaryKey="id"
+                        file="employee.csv" relativeToChangelogFile="true" separator=";"/>
+    </changeSet>
+</databaseChangeLog>
