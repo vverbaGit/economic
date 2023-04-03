@@ -2,8 +2,12 @@
 
 ## Installation
 
+You should create new database and you can configure it in src/main/resources/application.yaml.
+
 You should have JDK 17 and maven.
+
 You can run app by run this maven command.
+
 The web application is accessible via localhost:8080.
 
 ```maven
